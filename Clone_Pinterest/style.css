@@ -35,6 +35,16 @@ header .icon .printerest_icon /* Section for the icon printerest */
     width: 25px;
 }
 
+header .notification .notification_icon
+{
+    width: 25px;
+}
+
+header .message .message_icon
+{
+    width: 25px;
+}
+
 header .home button /* Section for the botton HOME*/
 {
     border-radius: 24px;
