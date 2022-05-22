@@ -5,12 +5,16 @@ body
     font-size: 16px;
 }
 
+/* ************************* Header *************************** */
+
 header #menu
 {
+    width: auto;
     background-color: white;
     padding: 4px 16px;
-    border: 1px solid black;
-    position: fixed;
+    /* border: 1px solid black; */
+    margin: 0px;
+    /* position: fixed; */ /* prueba en lo que resuelvo que las imagenes no se vean por arriba */
 }
 
 header .list_container 
@@ -19,17 +23,13 @@ header .list_container
     cursor: pointer;
     list-style: none;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 header .list_container li
 {
     margin-right: 25px;
-}
-
-header .list_container
-{
-    margin: 0px;
-    padding: 0px;
 }
 
 /* Section for the printerest icon  */ 
@@ -94,7 +94,7 @@ header .home button .home_container
 header .main_search .search_container
 {
     border: 1px solid black;
-    background-color: #efefef;
+    background-color: #cfcfcf/* efefef */;
     display: flex;
     border-radius: 24px;
     height: 48px;
@@ -105,12 +105,81 @@ header .main_search .search_container
 header .main_search .icon_search .search
 {
     width: 15px;
+    margin: 0px 15px;
 }
+
+input
+{
+    width: 950px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    background-color: #cfcfcf;
+}
+
+/* ************************* Main ***************************** */
+
+main
+{
+    margin-top: 15px;
+}
+
+#gallery_container
+{
+    display: grid;
+    grid-template-columns: repeat(5, 290px);
+    grid-auto-rows: 200px;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.gallery_items
+{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.gallery_items
+{
+    display: grid;
+    grid-row-start: span 2;
+}
+
+.gallery_items_2
+{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.link_imagen
+{
+    /* border: 2px solid violet; */
+    width: 100%;
+    height: 100%;
+}
+
+.gallery_imagen
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Con esta funcion impedimos que la imagen se distorcione  */
+    border-radius: 24px;
+}
+
+
+/* ************************* Footrt *************************** */
 
 /* Section for the plus icon */ 
 footer .plus_icon
 {
-    background-color: green;
+    background-color: rgba(255, 255, 255, 0.7);
     height: 56px;
     width: 56px;
     border-radius: 50%;
@@ -121,7 +190,7 @@ footer .plus_icon
 
 footer .plus_icon .plus_imagen
 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 56px;
     height: 56px;
     display: flex;
@@ -137,7 +206,7 @@ footer .plus_icon .plus_imagen .plus
 /* Section for the question icon */ 
 footer .question_icon
 {
-    background-color: blue;
+    background-color: rgba(255, 255, 255, 0.7);
     height: 56px;
     width: 56px;
     border-radius: 50%;
@@ -148,7 +217,7 @@ footer .question_icon
 
 footer .question_icon .question_imagen
 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 56px;
     height: 56px;
     display: flex;
