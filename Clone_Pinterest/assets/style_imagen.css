@@ -80,7 +80,9 @@ header .home button
 }
 
 /* Section for the botton HOME*/
-header .home button .home_container 
+
+
+header .home button .home_container strong
 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
@@ -93,7 +95,7 @@ header .home button .home_container
 /* Section for the search */ 
 header .main_search .search_container
 {
-    /* border: 1px solid black; */
+   /*  border: 1px solid black; */
     background-color: #cfcfcf/* efefef */;
     display: flex;
     border-radius: 24px;
@@ -108,7 +110,7 @@ header .main_search .icon_search .search
     margin: 0px 15px;
 }
 
-input
+#menu input
 {
     width: 950px;
     height: 40px;
@@ -118,63 +120,196 @@ input
     background-color: #cfcfcf;
 }
 
-/* ************************* Main ***************************** */
+/* ************************************************************ */
 
-main
+.main_container
 {
-    margin-top: 15px;
-}
-
-#gallery_container
-{
-    display: grid;
-    grid-template-columns: repeat(5, 290px);
-    grid-auto-rows: 200px;
-    justify-content: center;
-    grid-gap: 10px;
-}
-
-.gallery_items
-{
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* background-color: aqua; */
+    margin-top: 25px;
 }
 
-.gallery_items
+.central_container
 {
-    display: grid;
-    grid-row-start: span 2;
-}
-
-.gallery_items_2
-{
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* background-color: aqua; */
-}
-
-.link_imagen
-{
-    /* border: 2px solid violet; */
-    width: 100%;
-    height: 100%;
-}
-
-.gallery_imagen
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Con esta funcion impedimos que la imagen se distorcione  */
+    border: 1px solid gray;
     border-radius: 24px;
+    width: 1016px;
+    height: auto;
+
+
 }
 
 
-/* ************************* Footrt *************************** */
+.imagen_container
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px 0px 0px 24px;
+}
+
+.general_text
+{
+    padding: 0px 32px;
+    /* border: 1px solid green; */
+    width: 444px;
+}
+
+.nav_container
+{
+    margin-top: 40px;
+    width: 444px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+}
+
+.icon_container
+{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+}
+
+main .icon
+{
+    margin-right: 20px;
+}
+
+.points_icon, .link_icon, .share_icon
+{
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section for the botton Save*/
+.buttom_save 
+{
+    border-radius: 24px;
+    color: white;
+    background-color: #e60023;
+    padding: 0px 16px;
+    cursor: pointer;
+    height: 48px;
+    border: none;
+}
+
+.save_container
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-size-adjust: 100%;
+    font-weight: 700px;
+    display: block;
+}
+
+.text_container
+{
+    margin-top: 60px;
+}
+
+h1 .tittle
+{
+    font-size: 36px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #111111;
+}
+
+.text
+{
+    text-align: justify;
+}
+
+.sub_tittle
+{
+    margin-top: 60px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #111111;
+}
+
+.comments_container
+{
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 60px 0px;
+}
+
+.profile_comment
+{
+    margin-right: 15px;
+}
+
+.profile_comment_icon
+{
+    width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment_container
+{
+    display: flex;
+    border-radius: 24px;
+    border:1px solid #cfcfcf;
+    align-items: center;
+}
+
+.comment
+{
+    padding-left: 20px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    
+}
+
+.emoji_icon
+{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    padding-right: 20px;
+
+}
+
+.owner_container
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.owner_profile
+{
+    margin: 0px  15px;
+}
+
+.owner_profile_icon
+{
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owner_text
+{
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ************************************************************ */
 
 /* Section for the plus icon */ 
 footer .plus_icon
@@ -226,6 +361,32 @@ footer .question_icon .question_imagen
 }
 
 footer .question_icon .question_imagen .question
+{
+    width: 30px;
+}
+
+
+footer .back_icon
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    position: fixed; 
+    right: 1450px;
+    bottom: 570px;
+}
+
+footer .back_icon .back_imagen
+{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .back_icon .back_imagen .back
 {
     width: 30px;
 }
